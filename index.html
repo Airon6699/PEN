@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5f0">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9sNubCw6EdlmH-YjtydBdUikJc3ZSmDWDmjqUO8OIA&s=10">
+    <title>Pen — The Art of Writing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="user.js" defer></script>
+</head>
+<body>
+    <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75</div>
+
+    <header class="header">
+        <a class="logo" href="#home">Pen<span>.</span></a>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#story">Our story</a>
+            <a href="#journal">Journal</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-btn" id="search-toggle" aria-label="Search">⌕</button>
+            <button class="icon-btn" id="account-btn" aria-label="Account">♙</button>
+            <button class="bag-btn" id="bag-toggle">Bag <span id="bag-count">0</span></button>
+            <button class="menu-btn" id="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <div class="search-panel" id="search-panel">
+        <input id="search-input" placeholder="Search pens, collections..." autocomplete="off">
+        <button id="search-close">✕</button>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow">THE ART OF WRITING</span>
+                <h1>Ideas deserve<br>something <em>extraordinary.</em></h1>
+                <p>Beautifully crafted writing instruments for thoughts that matter. Discover the pleasure of putting pen to paper.</p>
+                <div class="hero-actions">
+                    <a href="#collection" class="primary-btn">Explore collection <span>↗</span></a>
+                    <a href="#story" class="text-link">Discover PENORA</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>12k+</strong><span>Happy writers</span></div>
+                    <div><strong>24</strong><span>Unique designs</span></div>
+                    <div><strong>4.9/5</strong><span>Customer rating</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-orbit"></div>
+                <div class="hero-label">THE SIGNATURE<br>COLLECTION · Nº 01</div>
+                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=1000&q=85" alt="Premium writing instruments">
+                <div class="floating-note">Made for your<br>next big idea.</div>
+            </div>
+            <div class="hero-bottom">DESIGNED WITH INTENTION <span>SCROLL TO DISCOVER ↓</span></div>
+        </section>
+
+        <section class="trust-strip">
+            <span>Thoughtful design</span><i>✳</i>
+            <span>Quality materials</span><i>✳</i>
+            <span>Made to be kept</span><i>✳</i>
+            <span>Writing, reimagined</span>
+        </section>
+
+        <section class="collection section" id="collection">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR INSTRUMENT</span>
+                    <h2>The collection<span>.</span></h2>
+                    <p>Every line begins with the right pen.</p>
+                </div>
+                <span class="product-total" id="product-total">06 OBJECTS</span>
+            </div>
+
+            <div class="catalog-tools">
+                <div class="filters" id="filters">
+                    <button class="filter active" data-filter="all">All pieces</button>
+                    <button class="filter" data-filter="ballpoint">Ballpoint</button>
+                    <button class="filter" data-filter="fountain">Fountain</button>
+                    <button class="filter" data-filter="rollerball">Rollerball</button>
+                    <button class="filter" data-filter="sets">Gift sets</button>
+                </div>
+                <select id="sort-select" aria-label="Sort products">
+                    <option value="featured">Featured</option>
+                    <option value="low">Price: low to high</option>
+                    <option value="high">Price: high to low</option>
+                    <option value="name">Name: A–Z</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <h3>No pieces found.</h3>
+                <p>Try a different search or category.</p>
+                <button class="primary-btn" id="reset-filters">View all pieces</button>
+            </div>
+        </section>
+
+        <section class="editorial section" id="story">
+            <div class="editorial-image">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=85" alt="Notebook and handwritten notes">
+                <span class="image-caption">SLOW DOWN. WRITE SOMETHING.</span>
+            </div>
+            <div class="editorial-copy">
+                <span class="eyebrow">A DIFFERENT KIND OF EVERYDAY</span>
+                <h2>Less scrolling.<br><em>More meaning.</em></h2>
+                <p>Some ideas need a little more than a screen. PENORA celebrates the quiet ritual of writing: the first line in a new notebook, a thought worth keeping, a letter that says more.</p>
+                <p>Our instruments are selected for their considered design, comfortable feel and the simple joy of a line well written.</p>
+                <a href="#collection" class="text-link">Find your everyday pen ↗</a>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <span class="eyebrow">A THOUGHT TO KEEP</span>
+            <blockquote>“The beginning of every great idea is a single line.”</blockquote>
+            <span class="quote-author">THE PENORA JOURNAL</span>
+        </section>
+
+        <section class="features section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">THE PENORA STANDARD</span>
+                    <h2>Details make<br>the difference<span>.</span></h2>
+                </div>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card"><span>01</span><div class="feature-icon">✳</div><h3>Considered design</h3><p>Balanced proportions and clean silhouettes that feel right in your hand.</p></article>
+                <article class="feature-card"><span>02</span><div class="feature-icon">◈</div><h3>Made for daily use</h3><p>Thoughtful writing tools for notes, sketches, plans and everything between.</p></article>
+                <article class="feature-card"><span>03</span><div class="feature-icon">↗</div><h3>Gift-ready details</h3><p>Elegant presentation for milestones, celebrations and just-because moments.</p></article>
+            </div>
+        </section>
+
+        <section class="journal section" id="journal">
+            <div class="section-heading">
+                <div><span class="eyebrow">NOTES FROM PENORA</span><h2>The journal<span>.</span></h2></div>
+                <span class="product-total">THOUGHTS WORTH KEEPING</span>
+            </div>
+            <div class="journal-grid">
+                <article class="journal-card">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80" alt="Writing in a notebook">
+                    <span>THE WRITING RITUAL</span><h3>Making space for your thoughts</h3><p>A simple writing ritual can make an ordinary day feel a little more intentional.</p>
+                </article>
+                <article class="journal-card">
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=80" alt="Notebook on a desk">
+                    <span>THE ART OF NOTES</span><h3>Why the best ideas get written down</h3><p>Capture a thought before it disappears. You never know where it might lead.</p>
+                </article>
+                <article class="journal-card">
+                    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=700&q=80" alt="A thoughtful gift">
+                    <span>GIFTING, REDEFINED</span><h3>A little object with a lot of meaning</h3><p>Some of the best gifts become part of someone's everyday story.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <span class="eyebrow">LETTERS FROM PENORA</span>
+            <h2>A little inspiration<br>in your inbox.</h2>
+            <p>New arrivals, writing rituals and occasional good ideas.</p>
+            <form id="newsletter-form">
+                <input id="newsletter-email" type="email" placeholder="Your email address" required>
+                <button type="submit">Join the list ↗</button>
+            </form>
+            <small id="newsletter-message">By subscribing, you agree to receive occasional emails from PENORA.</small>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="logo" href="#home">Pen<span>.</span></a>
+                <p>Objects for the art of putting thoughts into words.</p>
+            </div>
+            <div><h4>Explore</h4><a href="#collection">All pieces</a><a href="#story">Our story</a><a href="#journal">The journal</a></div>
+            <div><h4>Help</h4><a href="#faq">FAQs</a><a href="#shipping">Shipping</a><a href="mailto:hello@penora.example">Contact us</a></div>
+            <div><h4>Follow the line</h4><p>Thoughtful objects. Better everyday rituals.</p><a href="#newsletter-form">Join our newsletter ↗</a></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 PENORA STUDIO</span><span>DESIGNED FOR THE THOUGHTFUL</span><a href="#home">BACK TO TOP ↑</a></div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="drawer" id="bag-drawer">
+        <div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-btn" data-close>✕</button></div>
+        <div class="drawer-items" id="bag-items"></div>
+        <div class="drawer-bottom">
+            <div class="subtotal"><span>Subtotal</span><strong id="bag-subtotal">$0.00</strong></div>
+            <p>Shipping and taxes calculated at checkout.</p>
+            <button class="primary-btn full-btn" id="checkout-btn">Continue to checkout ↗</button>
+            <button class="text-link center-link" data-close>Continue browsing</button>
+        </div>
+    </aside>
+
+    <aside class="drawer" id="favorites-drawer">
+        <div class="drawer-head"><div><span class="eyebrow">SAVED FOR LATER</span><h2>Your favorites</h2></div><button class="close-btn" data-close>✕</button></div>
+        <div class="drawer-items" id="favorite-items"></div>
+    </aside>
+
+    <div class="modal-wrap" id="auth-modal">
+        <div class="modal">
+            <button class="close-btn modal-close" data-close>✕</button>
+            <a class="logo modal-logo" href="#home">PENORA<span>.</span></a>
+            <span class="eyebrow">WELCOME TO THE STUDIO</span>
+            <h2 id="auth-title">Welcome back.</h2>
+            <p id="auth-description">Sign in to continue your PENORA experience.</p>
+            <div class="auth-tabs"><button class="auth-tab active" data-auth="login">Sign in</button><button class="auth-tab" data-auth="register">Create account</button></div>
+            <form id="auth-form">
+                <label id="username-label" hidden>Username<input id="auth-username" name="username" autocomplete="username" minlength="3" placeholder="Your username"></label>
+                <label id="email-label" hidden>Email address<input id="auth-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+                <label>Password<input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" placeholder="At least 8 characters" required></label>
+                <button class="primary-btn full-btn" type="submit" id="auth-submit">Sign in ↗</button>
+                <p class="form-message" id="auth-message" role="status"></p>
+            </form>
+            <small>Your account details are handled by this demo store.</small>
+        </div>
+    </div>
+
+    <div class="modal-wrap" id="checkout-modal">
+        <div class="modal">
+            <button class="close-btn modal-close" data-close>✕</button>
+            <span class="eyebrow">ALMOST YOURS</span>
+            <h2>Complete your order.</h2>
+            <p>Enter your delivery details to place a demo order.</p>
+            <form id="checkout-form">
+                <label>Full name<input id="checkout-name" required minlength="2" placeholder="Your name"></label>
+                <label>Email address<input id="checkout-email" type="email" required placeholder="you@example.com"></label>
+                <label>Delivery address<input id="checkout-address" required minlength="5" placeholder="Street, city"></label>
+                <div class="checkout-total"><span>Total</span><strong id="checkout-total">$0.00</strong></div>
+                <button class="primary-btn full-btn" type="submit">Place demo order ↗</button>
+                <p class="form-message" id="checkout-message" role="status"></p>
+            </form>
+            <small>This demo does not process real payments.</small>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
